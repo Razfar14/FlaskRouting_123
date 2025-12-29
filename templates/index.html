@@ -1,0 +1,29 @@
+<style>
+   body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 300px;
+   }
+    input[type="button"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+   
+</style>
+<html>
+
+   <head>
+      <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+   </head>
+   
+   <body>
+      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+   </body>
+   
+</html>
